@@ -12,7 +12,8 @@ class ScheduleController < ApplicationController
     sort_init(@query.sort_criteria.empty? ? [['id', 'desc']] : @query.sort_criteria)
     sort_update(@query.sortable_columns)
     if @query.valid?
-      @query.column_names = ['tracker','subject','assigned_to']
+      @query.column_names = ['category','subject', 'assigned_to', 'status']
+      @query.group_by = 'fixed_version'
       @limit = per_page_option
       @issue_count = @query.issue_count
       @issue_pages = Paginator.new self, @issue_count, @limit, params['page']
