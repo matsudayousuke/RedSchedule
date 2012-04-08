@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+one:
+  id: 1
+  issue_id: 1
+  user_id: 1
+  scheduled_date: 2012-02-19
+  hours: 1.5
+  created_on: 
+  updated_on: 2012-02-19 21:05:39
+two:
+  id: 2
+  issue_id: 1
+  user_id: 1
+  scheduled_date: 2012-02-19
+  hours: 1.5
+  created_on: 
+  updated_on: 2012-02-19 21:05:39
